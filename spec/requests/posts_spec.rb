@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
-   
   describe 'GET post' do
     before(:each) { get '/users/:user_id/posts' }
 
@@ -11,7 +10,7 @@ RSpec.describe 'Posts', type: :request do
 
     describe 'GET show' do
       before(:each) { get '/users/:user_id/posts/11' }
-      
+
       it 'should return a 200 response' do
         expect(response).to have_http_status(:ok)
       end
@@ -19,13 +18,10 @@ RSpec.describe 'Posts', type: :request do
 
     describe 'GET new' do
       before(:each) { get '/users/:user_id/posts/new' }
-      
+
       it 'should return a 200 response' do
         expect(response).to have_http_status(:ok)
       end
     end
-
-    
   end
- end
-
+end
