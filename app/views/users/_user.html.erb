@@ -1,0 +1,21 @@
+<ul class = "list-inline mt-5 w-75">   
+  <% @user.each do |user| %>
+    <li class="mb-4 shadow d-flex border-end border-4 border-info bg-white px-3 py-3">
+      <div class="mr-5 block mt-2">
+        <img src="<%= user.photo %>" class="rounded float-start rounded border img-thumbnail" style="width: 150px" alt="User image">
+      </div>
+      <div class="ml-5 w-100 px-5">
+        <h2 class="text-secondary">
+          <%= link_to user_path(user.id), class: 'text-muted text-decoration-none' do %> 
+            <%= user.name %> 
+          <% end %> 
+        </h2>
+        <% if user.posts_counter %>
+          <p class="float-right text-end text-muted pt-5">Number of posts: <%= user.posts.length %> </p>
+        <% else %>
+          <p class="float-right text-end text-muted pt-5">Number of posts: 0 </p>
+        <% end %>
+      </div>
+    </li>
+  <% end%>
+</ul>
