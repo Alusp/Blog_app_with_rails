@@ -19,16 +19,16 @@ class PostsController < ApplicationController
     respond_to do |format|
       if @post.save
         format.html { redirect_to user_posts_url(current_user.id), notice: 'Post was successfully created.' }
-         
+
       else
         format.html { render :new }
       end
     end
-    end
+  end
 
-    private
+  private
 
-    def post_params
-      params.require(:post).permit(:title, :text)
-    end
+  def post_params
+    params.require(:post).permit(:title, :text)
+  end
 end

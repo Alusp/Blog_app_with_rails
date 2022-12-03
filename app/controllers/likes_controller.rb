@@ -1,5 +1,5 @@
 class LikesController < ApplicationController
-def create
+  def create
     print current_user
     new_like = current_user.likes.new(like_params)
 
