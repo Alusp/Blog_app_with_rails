@@ -19,10 +19,10 @@
   # {author_id: 2, title: 'Hello', text: 'This is my first post'},
   # {author_id: 2, title: 'Hello', text: 'This is my first post'},])
 
-     Comment.create([{post_id: 1, author_id: 2, text: 'Hi Tom!'},
-                    {post_id: 1, author_id: 3, text: 'Hi Tom!'},
-                    {post_id: 1, author_id: 4, text: 'Hi Tom!'},
-                    {post_id: 1, author_id: 5, text: 'Hi Tom!'},
-                    {post_id: 1, author_id: 6, text: 'Hi Tom!'},
-                    {post_id: 1, author_id: 7, text: 'Hi Tom!'},
-                    {post_id: 1, author_id: 8, text: 'Hi Tom!'},])
+    #  Comment.create([{post_id: 1, author_id: 2, text: 'Hi Tom!'},
+    #                 {post_id: 1, author_id: 3, text: 'Hi Tom!'},
+    #                 {post_id: 1, author_id: 4, text: 'Hi Tom!'},
+    #                 {post_id: 1, author_id: 5, text: 'Hi Tom!'},
+    #                 {post_id: 1, author_id: 6, text: 'Hi Tom!'},
+    #                 {post_id: 1, author_id: 7, text: 'Hi Tom!'},
+    #                 {post_id: 1, author_id: 8, text: 'Hi Tom!'},])
